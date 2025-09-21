@@ -127,8 +127,8 @@ This project is open source and available under the MIT License.
 
 👨‍💻 Developer
 Alfred Lebu Paruque
-🎓 Final Year BSc IT Student | North West University
-📍 Lephalale, South Africa (Open to Pretoria)
+🎓BSc IT Student | North West University
+📍 South Africa 
 
 📁 Portfolio: allysto.github.io/portfolio-site/
 
