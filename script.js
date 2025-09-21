@@ -53,11 +53,12 @@ document.getElementById('stock-search').addEventListener('click', async () => {
 
 // Placeholder for currency search (You can implement this later with a different API)
 document.getElementById('currency-search').addEventListener('click', () => {
-    showError('currency-error', 'Currency feature is coming soon!');
-    
-    // Optional: You can implement this similar to the stock search later.
-    // You would need to add a new endpoint to your .NET API for currency data.
+    // Show a more prominent message or alert
+    alert('Currency exchange feature is coming in a future update! Stay tuned.');
+   
+    // showError('currency-error', '🔄 Currency exchange feature is under development and coming soon!');
 });
+  
 
 function showError(elementId, message) {
     const errorElement = document.getElementById(elementId);
@@ -103,4 +104,5 @@ function addStockCardFromData(data) {
     // Prepend the new card to the container so latest search appears first
     const container = document.getElementById('stocks-container');
     container.insertAdjacentHTML('afterbegin', cardHTML);
+
 }
