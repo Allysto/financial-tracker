@@ -136,4 +136,4 @@ Alfred Lebu Paruque
 
 📱 Phone: +27608560703
 
-💼 LinkedIn: Your LinkedIn Profile
+💼 LinkedIn: https://www.linkedin.com/in/alfred-l-b373a5283/
