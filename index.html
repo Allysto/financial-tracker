@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Financial Tracker</h1>
+            <p class="description">Track stock prices and currency exchange rates in real-time. Get the latest financial data from reliable sources.</p>
+        </header>
+        
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="stocks">Stock Prices</button>
+            <button class="tab-btn" data-tab="currency">Currency Exchange</button>
+        </div>
+        
+        <div class="tab-content active" id="stocks-tab">
+            <div class="search-container">
+                <input type="text" class="search-input" id="stock-symbol" placeholder="Enter stock symbol (e.g., AAPL, MSFT, GOOGL)">
+                <button class="search-btn" id="stock-search">Search</button>
+            </div>
+            
+            <div class="loader" id="stocks-loader">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Fetching stock data...</p>
+            </div>
+            
+            <div class="error" id="stocks-error">
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error message will appear here</p>
+            </div>
+            
+            <div class="card-container" id="stocks-container">
+                <!-- Sample data for demonstration -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">AAPL</span>
+                        <span class="change positive">+1.2%</span>
+                    </div>
+                    <div class="price">$173.85</div>
+                    <div class="card-footer">
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="info-label">Open</span>
+                                <span class="info-value">$172.50</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Volume</span>
+                                <span class="info-value">54.2M</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">High</span>
+                                <span class="info-value">$174.20</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Low</span>
+                                <span class="info-value">$171.80</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">MSFT</span>
+                        <span class="change positive">+0.8%</span>
+                    </div>
+                    <div class="price">$337.42</div>
+                    <div class="card-footer">
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="info-label">Open</span>
+                                <span class="info-value">$335.60</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Volume</span>
+                                <span class="info-value">23.7M</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">High</span>
+                                <span class="info-value">$338.90</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Low</span>
+                                <span class="info-value">$334.50</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="currency-tab">
+            <div class="search-container">
+                <input type="text" class="search-input" id="currency-pair" placeholder="Enter currency pair (e.g., USD-EUR, GBP-JPY)">
+                <button class="search-btn" id="currency-search">Search</button>
+            </div>
+            
+            <div class="loader" id="currency-loader">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Fetching currency data...</p>
+            </div>
+            
+            <div class="error" id="currency-error">
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error message will appear here</p>
+            </div>
+            
+            <div class="card-container" id="currency-container">
+                <!-- Sample data for demonstration -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">USD/EUR</span>
+                        <span class="change negative">-0.2%</span>
+                    </div>
+                    <div class="price">€0.9243</div>
+                    <div class="card-footer">
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="info-label">Open</span>
+                                <span class="info-value">€0.9258</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">High</span>
+                                <span class="info-value">€0.9265</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Low</span>
+                                <span class="info-value">€0.9231</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Last Update</span>
+                                <span class="info-value">15:45 UTC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="symbol">GBP/USD</span>
+                        <span class="change positive">+0.4%</span>
+                    </div>
+                    <div class="price">$1.2638</div>
+                    <div class="card-footer">
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="info-label">Open</span>
+                                <span class="info-value">$1.2589</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">High</span>
+                                <span class="info-value">$1.2652</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Low</span>
+                                <span class="info-value">$1.2574</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Last Update</span>
+                                <span class="info-value">15:50 UTC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Financial Tracker &copy; 2025 | Data provided by financial APIs</p>
+            <p>Note: This is a demonstration app. For real financial data, you would need to use actual APIs with proper authentication.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
