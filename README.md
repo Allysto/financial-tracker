@@ -126,7 +126,7 @@ Submit a pull request
 This project is open source and available under the MIT License.
 
 👨‍💻 Developer
-Alfred Lebu Paruque
+Alfred 
 🎓BSc IT Student | North West University
 📍 South Africa 
 
