@@ -68,5 +68,13 @@ GET /api/stock/{symbol}
   "volume": 52474093
 }
 
+👨‍💻 Developer
+Alfred Lebu P
+
+Portfolio: allysto.github.io/portfolio-site/
+
+Email: allylebo@gmail.com
+
+LinkedIn: Your LinkedIn Profile
 
 
